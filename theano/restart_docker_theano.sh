@@ -1,0 +1,2 @@
+docker restart theano
+docker exec -ti -e COLUMNS=$COLUMNS -e LINES=$LINES -e TERM=$TERM theano bash

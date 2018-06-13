@@ -1,0 +1,4 @@
+*.swo
+*.swp
+tensorflow/train
+tensorflow/ImageSets
