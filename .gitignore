@@ -1,4 +1,8 @@
 *.swo
 *.swp
-tensorflow/train
-tensorflow/ImageSets
+tensorflow/Desktop/*
+tensorflow2/Desktop/pruning/*
+tensorflow2/Desktop/quantization/*
+tensorflow2/Desktop/weightsharing-quant2/*
+caffe/Desktop/*
+torch/Dataset/*

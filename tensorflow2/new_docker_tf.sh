@@ -9,9 +9,10 @@ nvidia-docker run -d -p 6006:6006 -e DISPLAY=$DISPLAY \
 	--workdir="/root" \
 	-v /tmp/.X11-unix:/tmp/.X11-unix:rw \
 	-v /root/.Xauthority:/root/.Xauthority:rw \
-	-v /home/tk1star2/Desktop/tk/tk_framework/tensorflow/Desktop:/root/dataset:rw \
-	--name tsflow -it nvidia/cuda:8.0-cudnn5-devel-ubuntu16.04 bash
-docker cp ./X11 tsflow:/root/
+	-v /home/tk1star2/Desktop/tk/tk_framework/tensorflow2/Desktop:/root/dataset:rw \
+	--name tsflow2 -it nvidia/cuda:9.0-cudnn7-devel-ubuntu16.04 bash
+docker cp ./X11 tsflow2:/root/
+
 #sudo xhost +local:`docker inspect --format='{{ .Config.Hostname }}' $(docker ps -l -q)`
 	#-u root
 	#-e SSH_AUTH_SOCK=/ssh-agent -v SSH_AUTH_SOCK:/ssh-agent\
